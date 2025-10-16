@@ -28,7 +28,6 @@ class NewsViewModel @Inject constructor(private val newsRepository: NewsReposito
                 val response = newsRepository.getNews()
                 newsArticles = response.articles
             } catch (e: Exception) {
-                // Handle error
             }
         }
     }
